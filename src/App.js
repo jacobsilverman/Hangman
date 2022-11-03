@@ -12,7 +12,7 @@ function App() {
   const [guesses, setGuesses] = useState([]);
   const [wordToGuess, setWordToGuess] = useState();
   const [gameOver, setGameOver] = useState(false);
-  const [incorrect, setIncorrect] = useState(0);
+  const [incorrect, setIncorrect] = useState(1);
 
   useEffect(() => {
     getRandomWord().then((data) => setWordToGuess(data[0].toUpperCase()));
@@ -34,7 +34,7 @@ function App() {
       setIncorrect(incorrect+1);
     }
 
-    if (incorrect >= 9 || gameWon([...guesses, letter])) {
+    if (incorrect >= 10 || gameWon([...guesses, letter])) {
       setGameOver(true);
       return;
     } 

@@ -19,44 +19,44 @@ const Man = ({incorrect}) => {
                 context.moveTo(175, 225);
                 context.lineTo(5, 225);
                 context.moveTo(40, 225);
-                context.lineTo(25, 5);
-                context.lineTo(100, 5);
-                context.lineTo(100, 25);
+                context.lineTo(40, 5);
+                context.lineTo(120, 5);
+                context.lineTo(120, 30);
                 context.stroke();
                 break;
       
             case 2:
                 context.lineWidth = 5;
                 context.beginPath();
-                context.arc(100, 50, 25, 0, Math.PI*2, true);
+                context.arc(120, 55, 25, 0, Math.PI*2, true);
                 context.closePath();
                 context.stroke();
                 break;
             
             case 3:
                 context.beginPath();
-                context.moveTo(100, 75);
-                context.lineTo(100, 140);
+                context.moveTo(120, 80);
+                context.lineTo(120, 140);
                 context.stroke();
                 break;
       
             case 4:
                 context.beginPath();
-                context.moveTo(100, 85);
+                context.moveTo(120, 90);
                 context.lineTo(60, 100);
                 context.stroke();
                 break;
       
             case 5:
                 context.beginPath();
-                context.moveTo(100, 85);
-                context.lineTo(140, 100);
+                context.moveTo(120, 90);
+                context.lineTo(175, 100);
                 context.stroke();
                 break;
       
             case 6:
                 context.beginPath();
-                context.moveTo(100, 140);
+                context.moveTo(121, 135);
                 context.lineTo(80, 190);
                 context.stroke();
                 break;
@@ -70,15 +70,23 @@ const Man = ({incorrect}) => {
       
             case 8:
                 context.beginPath();
-                context.moveTo(100, 140);
-                context.lineTo(125, 190);
+                context.moveTo(120, 136);
+                context.lineTo(155, 190);
                 context.stroke();
                 break;
       
             case 9:
                 context.beginPath();
-                context.moveTo(122, 190);
-                context.lineTo(135, 185);
+                context.moveTo(152, 190);
+                context.lineTo(165, 185);
+                context.stroke();
+                break;
+
+            case 10:
+                context.beginPath();
+                context.font = "15px Arial bold";
+                context.fillText("X  X", 105, 50);
+                context.fillText("O", 115, 70);
                 context.stroke();
                 break;
 
