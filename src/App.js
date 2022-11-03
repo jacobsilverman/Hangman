@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   const reset = () => {
-    setIncorrect(0);
+    setIncorrect(1);
     setGameOver(false);
     setGuesses([]);
     getRandomWord().then((data) => setWordToGuess(data[0].toUpperCase()));
